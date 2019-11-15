@@ -72,7 +72,7 @@ const PlanetView = ({ planet }) => {
 
   return (
     <React.Fragment>
-      <img className="planet-image"
+      <img className="planet-image" alt={`planet-${id}`}
            src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} />
       <div>
         <h4>{name}</h4>
@@ -94,6 +94,3 @@ const PlanetView = ({ planet }) => {
     </React.Fragment>
   );
 };
-
-
-
